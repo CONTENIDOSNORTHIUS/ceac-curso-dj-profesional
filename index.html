@@ -968,36 +968,42 @@
     <!-- ==================== CAMPUS VIRTUAL ==================== -->
     <section id="sobre-ceac" class="py-16 lg:py-20">
       <div class="max-w-6xl mx-auto px-4 lg:px-8">
-        <div class="max-w-2xl mb-8 reveal">
-          <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue mb-3">Campus virtual</h2>
-          <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-            Aprende desde cualquier dispositivo con nuestro campus virtual: tutorías personalizadas,
-            recursos descargables, foros, simuladores y seguimiento en tiempo real de tu progreso.
+        <!-- Encabezado -->
+        <div class="max-w-2xl reveal mb-10 md:mb-14">
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-ceac-blue mb-3 leading-tight">
+            Campus <span class="italic">virtual</span>
+          </h2>
+          <p class="text-ceac-blue font-semibold text-sm md:text-base mb-4">Todo tu curso, en un único lugar.</p>
+          <p class="text-xs md:text-sm text-black leading-relaxed">
+            Encontrarás todos los recursos de tu formación en un mismo lugar: un campus virtual
+            renovado y en constante actualización que te proporcionará una experiencia de usuario
+            única. Fórmate a través de una plataforma muy intuitiva y visual en la que encontrarás
+            todo tipo de ayudas multimedia para alcanzar tu objetivo.
           </p>
         </div>
-        <div class="reveal">
-          <!-- TODO: Sustituir por captura real del campus -->
-          <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=70"
-               onerror="this.src='https://placehold.co/1400x600/E8EEF7/0017EC?text=Campus+virtual+CEAC'"
-               alt="Estudiante usando el campus virtual de CEAC"
-               class="rounded-2xl shadow-lg w-full aspect-[21/9] object-cover" />
+
+        <!-- Botón play (vídeo del campus) -->
+        <div class="flex justify-center py-8 reveal">
+          <button type="button" class="group inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-ceac-lime hover:bg-ceac-limeDark shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-4 focus:ring-ceac-blue/20" aria-label="Reproducir vídeo del campus virtual">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- ==================== CTA FINAL "Te formas, trabajas" ==================== -->
-    <section class="py-24 bg-ceac-blue">
-      <div class="max-w-5xl mx-auto px-4 lg:px-8 text-center reveal">
-        <p class="font-display text-white text-5xl md:text-7xl lg:text-8xl leading-tight">
-          Te formas,
-          <span class="italic block md:inline">trabajas</span>
-          <span class="inline-block ml-2" aria-hidden="true">💼</span>
-        </p>
-        <div class="mt-8 inline-flex">
-          <span class="bg-ceac-lime text-ceac-blue text-sm font-semibold px-5 py-2 rounded-full">
-            Especialistas en formación
-          </span>
+    <section class="py-20 lg:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8">
+        <div class="text-center reveal">
+          <p class="font-display text-ceac-blue text-5xl md:text-7xl lg:text-8xl leading-tight flex items-center justify-center gap-4 md:gap-6 flex-wrap">
+            <span>Te formas</span>
+            <span class="inline-block text-4xl md:text-5xl lg:text-6xl" aria-hidden="true">💼</span>
+            <span class="italic">trabajas</span>
+          </p>
         </div>
+        <p class="text-right text-[10px] md:text-xs text-gray-500 italic mt-10">*Consultar condiciones</p>
       </div>
     </section>
   </main>
