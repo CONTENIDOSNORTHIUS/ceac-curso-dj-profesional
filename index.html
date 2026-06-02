@@ -1244,27 +1244,23 @@
           </p>
         </div>
 
-        <!-- Grid de logos -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 reveal">
-          <div class="bg-ceac-skyBg rounded-xl aspect-[5/3] flex items-center justify-center p-5">
-            <img src="https://logo.clearbit.com/hotellaframboise.com"
-                 onerror="this.src='https://placehold.co/200x100/E8EEF7/0017EC?text=Hotel+La+Framboise'; this.onerror=null;"
-                 alt="Hotel La Framboise" class="max-h-full max-w-full object-contain" />
-          </div>
-          <div class="bg-ceac-skyBg rounded-xl aspect-[5/3] flex items-center justify-center p-5">
-            <img src="https://logo.clearbit.com/marriott.com"
-                 onerror="this.src='https://placehold.co/200x100/E8EEF7/0017EC?text=AC+Hotels'; this.onerror=null;"
-                 alt="AC Hotels by Marriott" class="max-h-full max-w-full object-contain" />
-          </div>
-          <div class="bg-ceac-skyBg rounded-xl aspect-[5/3] flex items-center justify-center p-5">
-            <img src="https://logo.clearbit.com/wetaca.com"
-                 onerror="this.src='https://placehold.co/200x100/E8EEF7/E91E63?text=wetaca'; this.onerror=null;"
-                 alt="Wetaca" class="max-h-full max-w-full object-contain" />
-          </div>
-          <div class="bg-ceac-skyBg rounded-xl aspect-[5/3] flex items-center justify-center p-5">
-            <img src="https://logo.clearbit.com/mugaritz.com"
-                 onerror="this.src='https://placehold.co/200x100/E8EEF7/333333?text=Mugaritz'; this.onerror=null;"
-                 alt="Mugaritz" class="max-h-full max-w-full object-contain" />
+        <!-- Carrusel marquee infinito de logos colaboradores -->
+        <div class="logos-marquee reveal" aria-label="Empresas colaboradoras">
+          <div class="logos-track">
+            <!-- Set 1 (visible) -->
+            <div class="logo-card"><img src="https://logo.clearbit.com/sercotelhotels.com" onerror="this.onerror=null; this.src='https://placehold.co/220x90/E5E5FA/0017EC?text=Sercotel+Hotels';" alt="Sercotel Hotels" /></div>
+            <div class="logo-card"><img src="assets/logos/ilunion.png" alt="Ilunion Hotels" /></div>
+            <div class="logo-card"><img src="assets/logos/mamarosa.png" alt="Mamarosa Beach" /></div>
+            <div class="logo-card"><img src="assets/logos/golden.png" alt="Hotel Golden" /></div>
+            <div class="logo-card"><img src="assets/logos/quinta-san-amaro.png" alt="Quinta de San Amaro Hotel y Restaurante" /></div>
+            <div class="logo-card"><img src="assets/logos/altafullamar.png" alt="Altafulla Mar Hotel" /></div>
+            <!-- Set 2 (duplicado para loop infinito sin saltos), aria-hidden para no duplicar para lectores de pantalla -->
+            <div class="logo-card" aria-hidden="true"><img src="https://logo.clearbit.com/sercotelhotels.com" onerror="this.onerror=null; this.src='https://placehold.co/220x90/E5E5FA/0017EC?text=Sercotel+Hotels';" alt="" /></div>
+            <div class="logo-card" aria-hidden="true"><img src="assets/logos/ilunion.png" alt="" /></div>
+            <div class="logo-card" aria-hidden="true"><img src="assets/logos/mamarosa.png" alt="" /></div>
+            <div class="logo-card" aria-hidden="true"><img src="assets/logos/golden.png" alt="" /></div>
+            <div class="logo-card" aria-hidden="true"><img src="assets/logos/quinta-san-amaro.png" alt="" /></div>
+            <div class="logo-card" aria-hidden="true"><img src="assets/logos/altafullamar.png" alt="" /></div>
           </div>
         </div>
       </div>

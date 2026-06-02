@@ -27,6 +27,49 @@ html {
 /* Nav flota encima del hero; activamos sombra suave solo cuando es sólido */
 #nav.bg-white\/95 { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
 
+/* ---------- Carrusel marquee de logos colaboradores ---------- */
+.logos-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.logos-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  animation: logosMarquee 35s linear infinite;
+}
+.logos-track:hover { animation-play-state: paused; }
+.logo-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 110px;
+  background: #E5E5FA;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+}
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+@keyframes logosMarquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+/* Respeto a usuarios con motion reducido */
+@media (prefers-reduced-motion: reduce) {
+  .logos-track { animation: none; }
+}
+@media (min-width: 768px) {
+  .logos-track { gap: 1.25rem; }
+  .logo-card { width: 240px; height: 130px; }
+}
+
 /* Pista del camino de la metodología — scrollbar fina y discreta en lavanda */
 .metodologia-scroll {
   scrollbar-width: thin;
